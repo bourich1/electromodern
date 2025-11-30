@@ -88,7 +88,7 @@ function showProductDetails(product) {
   homePage.style.display = "none";
   document.title = product.name + " - ElectroModern";
   productDetails.style.display = "block";
-  window.scrollBy(0, -30);
+  window.scrollTo(0, -10);
 
   detailsContainer.innerHTML = `
                 <div class="details-image">
