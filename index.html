@@ -12,7 +12,7 @@
         content="ElectroModern, best online store Morocco, AirPods original, fast charger USB-C 20W, Bluetooth headphones JBL, smart watch Amazfit, Samsung, Apple accessories, electronics warranty, Morocco delivery" />
 
     <!-- Favicon -->
-    <link rel="icon" href="logo.svg" type="image/x-icon" />
+    <link rel="icon" href="logo.png" type="image/x-icon" />
 
     <!-- Robots -->
     <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -40,6 +40,8 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- aos -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -47,11 +49,11 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo">
+                <div class="logo" data-aos="fade-right">
                     <i class="fas fa-bolt"></i>
                     ElectroModern
                 </div>
-                <div class="cart-icon" id="cartIcon">
+                <div class="cart-icon" id="cartIcon" data-aos="fade-left">
                     <i class="fas fa-shopping-cart"></i>
                     <span class="cart-count" id="cartCount">0</span>
                 </div>
@@ -62,14 +64,14 @@
     <!-- Home Page -->
     <section class="home-page" id="homePage">
         <!-- Hero Section -->
-        <div class="hero">
+        <div class="hero" data-aos="fade-up" data-aos-duration="1000">
   <video class="hero-video" autoplay muted loop>
     <source src="assets/image/banner.mp4" type="video/mp4">
   </video>
   <div class="opacity"></div>
   <div class="container text-container">
-    <h1>Shop with <span>ElectroModern</span></h1>
-    <p>Your one-stop shop for premium electronic accessories with warranty and fast delivery across Morocco.</p>
+    <h1 data-aos="fade-up" data-aos-duration="1500">Shop with <span>ElectroModern</span></h1>
+    <p data-aos="fade-up" data-aos-duration="1500">Your one-stop shop for premium electronic accessories with warranty and fast delivery across Morocco.</p>
   </div>
 </div>
 
@@ -86,7 +88,7 @@
     </section>
 
     <!-- Product Details Page -->
-    <section class="product-details" id="productDetails">
+    <section class="product-details" id="productDetails" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
             <div class="back-btn" id="backBtn">
                 <i class="fas fa-arrow-left"></i> Back to Products
@@ -212,6 +214,11 @@
 }
 </script>
     <script src="assets/js/main.js"></script>
+    <!-- aos --> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+  AOS.init();
+</script>
 </body>
 
 </html>

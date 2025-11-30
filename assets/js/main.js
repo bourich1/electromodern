@@ -55,6 +55,8 @@ function renderProducts() {
   productsGrid.innerHTML = "";
   data.forEach((product) => {
     const productCard = document.createElement("div");
+    productCard.setAttribute("data-aos", "fade-up");
+    productCard.setAttribute("data-aos-duration", "1000");
     productCard.className = "product-card";
     productCard.innerHTML = `
         <img src="${product.image}" alt="${product.name}" class="product-image">
@@ -86,6 +88,7 @@ function showProductDetails(product) {
   homePage.style.display = "none";
   document.title = product.name + " - ElectroModern";
   productDetails.style.display = "block";
+  window.scrollBy(0, -30);
 
   detailsContainer.innerHTML = `
                 <div class="details-image">

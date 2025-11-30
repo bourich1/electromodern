@@ -197,7 +197,6 @@ header {
   font-weight: bold;
   font-size: 1rem;
   line-height: 1.2;
-  color: #333;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -246,7 +245,6 @@ header {
 footer {
   background-color: var(--footer-bg);
   padding: 40px 0 20px;
-  margin-top: 60px;
 }
 
 .footer-content {
@@ -331,7 +329,8 @@ footer {
 /* Product Details Page */
 .product-details {
   display: none;
-  padding: 40px 0;
+  margin-top:0px;
+  padding: 30px 0;
 }
 
 .back-btn {
@@ -349,7 +348,7 @@ footer {
 .details-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 20px;
   align-items: center;
 }
 
