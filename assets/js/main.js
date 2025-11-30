@@ -302,10 +302,10 @@ function submitOrder(e) {
     total += itemTotal;
     message += `${item.name} - $${item.price.toFixed(2)} x ${
       item.quantity
-    } = $${itemTotal.toFixed(2)}%0A`;
+    } = ${itemTotal.toFixed(2)}%0A DH`;
   });
 
-  message += `%0ATotal: $${total.toFixed(2)}`;
+  message += `%0ATotal: ${total.toFixed(2)} DH`;
 
   // Create WhatsApp URL
   const whatsappURL = `https://wa.me/212684303273?text=${message}`;
