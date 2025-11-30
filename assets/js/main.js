@@ -308,7 +308,7 @@ function submitOrder(e) {
   message += `%0ATotal: $${total.toFixed(2)}`;
 
   // Create WhatsApp URL
-  const whatsappURL = `https://wa.me/?text=${message}`;
+  const whatsappURL = `https://wa.me/212684303273?text=${message}`;
 
   // Open WhatsApp in a new tab
   window.open(whatsappURL, "_blank");
